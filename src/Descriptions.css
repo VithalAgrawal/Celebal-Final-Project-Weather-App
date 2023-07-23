@@ -1,0 +1,38 @@
+/* Container for the descriptions section */
+.section__descriptions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+/* Each description card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: transparent;
+    width: 120px;
+    text-align: center;
+}
+
+/* Icon and title section */
+.descriptions__card-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.descriptions__card-icon small {
+    font-size: 12px;
+}
+
+/* Data section */
+h2 {
+    font-size: 18px;
+    margin: 0;
+}

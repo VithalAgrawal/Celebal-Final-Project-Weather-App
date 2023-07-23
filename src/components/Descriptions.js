@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowUp, FaArrowDown, FaWind } from "react-icons/fa";
 import { BiHappy } from "react-icons/bi";
 import { MdCompress, MdOutlineWaterDrop } from "react-icons/md";
+import "../Descriptions.css";
 
 const Descriptions = ({ weather, units }) => {
   const tempUnit = units === "metric" ? "°C" : "°F";

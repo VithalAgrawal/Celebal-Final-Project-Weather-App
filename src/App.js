@@ -3,16 +3,18 @@ import Descriptions from "./components/Descriptions";
 import WeatherDisplay from "./components/WeatherDisplay";
 import CityInput from "./components/CityInput";
 import { getFormattedWeatherData } from "./weatherService";
+import "./WeatherDisplay.css";
 import hotBg from "./assets/hotBg.jpg";
 import warmBg from "./assets/warmBg.jpg";
 import coolBg from "./assets/coolBg.jpg";
 import coldBg from "./assets/coldBg.jpg";
 
 function App() {
-  const [city, setCity] = useState("coimbatore");
+  const [city, setCity] = useState("Bhubaneswar");
   const [weather, setWeather] = useState(null);
   const [units, setUnits] = useState("metric");
   const [bg, setBg] = useState();
+  const [clr, setColor] = useState("black");
 
   useEffect(() => {
     // Function to fetch data
@@ -31,12 +33,16 @@ function App() {
 
         if (temperature >= hot) {
           setBg(hotBg);
+          setColor("white");
         } else if (temperature >= warm) {
           setBg(warmBg);
+          setColor("white");
         } else if (temperature >= cool) {
           setBg(coolBg);
+          setColor("black");
         } else {
           setBg(coldBg);
+          setColor("black");
         }
       } catch (err) {
         alert("Enter valid city name");
@@ -65,7 +71,7 @@ function App() {
   );
 
   return (
-    <div className="App" style={{ backgroundImage: `url(${bg})` }}>
+    <div className="App" style={{ backgroundImage: `url(${bg})`, color:`${clr}`, border: `1px solid ${clr}` }}>
       <div className="overlay">
         {weather && (
           <div className="container">

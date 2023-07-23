@@ -1,5 +1,5 @@
 :root {
-  --section-overlay: rgba(0, 0, 0, 0.7);
+  --section-overlay: rgba(0, 0, 0, 0.5);
   --background-overlay: rgba(0, 0, 0, 0.2);
 }
 * {
@@ -39,7 +39,7 @@ body{
 .section {
   width: 100%;
   padding: 1rem;
-  color: white;
+  /* color: white; */
   border-radius: 5px;
 }
 

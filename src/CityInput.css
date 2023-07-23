@@ -1,0 +1,57 @@
+/* CityInput.css */
+
+/* Container for the entire CityInput component */
+.section button{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+/* Styling for the input */
+.react-autosuggest__input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.react-autosuggest__input:hover {
+    border: 1px solid #aaa;
+    /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.7); */
+    background-color: #ccc;
+}
+
+/* Styling for the suggestions container */
+.react-autosuggest__suggestions-container {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Styling for the suggestion items */
+.react-autosuggest__suggestion {
+    list-style-type: none;
+    width: 235px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    color: #000;
+    cursor: pointer;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #f0f0f0;
+}
+
+/* Styling for the suggestions when there are no results */
+.react-autosuggest__suggestions-container--no-results {
+    display: none;
+}
+
+/* Making the input area transparent */
+.section__input input {
+    background-color: transparent;
+}
